@@ -18,7 +18,7 @@ module RedmineChatTelegram
       private
 
       def send_message(text, params = {})
-        message = {chat_id: command.chat.id, text: text, parse_mode: 'HTML'}
+        message = { chat_id: command.chat.id, text: text, parse_mode: 'HTML' }
         bot.send_message(message.merge(params))
       end
 
